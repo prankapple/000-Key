@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cool Download Hub</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+
+  <style>
+    :root {
+      --dark-blue: #1e2a44; /* dark medium blue */
+      --dark-blue-2: #243657;
+      --grey: #e5e7eb;
+      --grey-dark: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--dark-blue), #111827);
+      color: var(--grey);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--dark-blue-2), var(--dark-blue));
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      color: var(--grey-dark);
+      margin-bottom: 2.2rem;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.95rem 1.2rem;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--dark-blue);
+      background: var(--grey);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--grey);
+      border: 2px solid var(--grey);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn.secondary:hover {
+      background: rgba(229, 231, 235, 0.08);
+    }
+
+    footer {
+      margin-top: 2.2rem;
+      font-size: 0.85rem;
+      color: var(--grey-dark);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <!-- Logo (image file) -->
+    <img src="icon.png" alt="Site Logo" class="logo" />
+
+    <!-- Title -->
+    <h1>000 Key</h1>
+    <p>000 Key is a Kill button using the <strong>000 button</strong> on a numpad keyboard extension.</p>
+	<p>To set up, download the main application and place it in the <strong>STARTUP folder</strong>, download the Kill application and put it in a easy to find location (eg. Desktop)</p>
+	<p>When the computer restarts and you click the <strong>000 key</strong> all non-critical processes will be terminated. The kill app terminates the main app.</p>
+    <!-- Download buttons -->
+    <div class="buttons">
+      <a href="apps/000 Key.exe" class="btn" download>⬇ Download 000 Key application</a>
+      <a href="apps/Kill.exe" class="btn secondary" download>⬇ Download Kill application</a>
+    </div>
+
+    <footer>
+      © 2025 <strong>000 Key</strong>. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
